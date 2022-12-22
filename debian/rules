@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+include /usr/share/dpkg/pkg-info.mk
+
+export PYBUILD_NAME=cssselect2
+
+%:
+	dh $@ --with python3,sphinxdoc --buildsystem=pybuild
+
+override_dh_auto_install:
+	dh_auto_install
+	rm -f debian/python*-cssselect2/usr/lib/python*/dist-packages/cssselect2/tests/LICENSE
+	rm -f debian/python*-cssselect2/usr/lib/python*/dist-packages/cssselect2/tests/make_valid_selectors_json.sh
+
+override_dh_sphinxdoc:
+ifeq (,$(findstring nodoc, $(DEB_BUILD_OPTIONS)))
+	PYTHONPATH=. python3 -m sphinx -b html -N docs/ $(CURDIR)/debian/python-cssselect2-doc/usr/share/doc/python-cssselect2-doc/html
+	dh_sphinxdoc
+endif

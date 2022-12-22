@@ -1,0 +1,2 @@
+# Used for unittests only and not loaded when run.
+python3-cssselect2: privacy-breach-generic usr/lib/python3/dist-packages/cssselect2/tests/content.xhtml [<link id="pseudo-link-link2" href="http://example.org/"/>] (http://example.org/)

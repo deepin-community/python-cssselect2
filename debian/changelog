@@ -1,0 +1,41 @@
+python-cssselect2 (0.3.0-1) unstable; urgency=low
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Michael Fladischer ]
+  * New upstream release.
+  * Use github.com in d/watch.
+  * Refresh patches.
+  * Clean up files to allow two builds in a row.
+  * Bump Standards-Version to 4.5.0.
+  * Bump debhelper version to 13.
+  * Set Rules-Requires-Root: no.
+  * Remove test data generator script from binary package.
+
+ -- Michael Fladischer <fladi@debian.org>  Tue, 09 Jun 2020 21:11:35 +0200
+
+python-cssselect2 (0.2.2-1) unstable; urgency=low
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Michael Fladischer ]
+  * New upstream release.
+  * Add debian/gbp.conf.
+  * Refresh patches.
+  * Bump debhelper version to 12.
+  * Bump Standards-Version to 4.4.0.
+  * Clean up pytest artifacts to allow two builds in a row.
+
+ -- Michael Fladischer <fladi@debian.org>  Sat, 14 Sep 2019 16:58:46 +0200
+
+python-cssselect2 (0.2.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #913669).
+
+ -- Michael Fladischer <fladi@debian.org>  Tue, 13 Nov 2018 19:13:59 +0100

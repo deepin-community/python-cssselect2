@@ -1,0 +1,57 @@
+Source: python-cssselect2
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders:
+ Michael Fladischer <fladi@debian.org>,
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-pytest,
+ python3-pytest-runner,
+ python3-setuptools,
+ python3-sphinx,
+ python3-sphinx-rtd-theme,
+ python3-tinycss2,
+Standards-Version: 4.5.0
+Homepage: https://github.com/Kozea/cssselect2/
+Vcs-Browser: https://salsa.debian.org/python-team/modules/python-cssselect2
+Vcs-Git: https://salsa.debian.org/python-team/modules/python-cssselect2.git
+Testsuite: autopkgtest-pkg-python
+Rules-Requires-Root: no
+
+Package: python-cssselect2-doc
+Section: doc
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${sphinxdoc:Depends},
+Description: implementation of CSS3 Selectors (Documentation)
+ cssselect2 is a straightforward implementation of CSS3 Selectors for markup
+ documents (HTML, XML, etc.) that can be read by ElementTree-like parsers
+ (including cElementTree, lxml, html5lib, etc.)
+ .
+ Unlike cssselect, it does not translate selectors to XPath and therefore does
+ not have all the correctness corner cases that are hard or impossible to fix in
+ cssselect.
+ .
+ This package contains the documentation.
+
+Package: python3-cssselect2
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Suggests:
+ python-cssselect2-doc,
+Description: implementation of CSS3 Selectors (Python3 version)
+ cssselect2 is a straightforward implementation of CSS3 Selectors for markup
+ documents (HTML, XML, etc.) that can be read by ElementTree-like parsers
+ (including cElementTree, lxml, html5lib, etc.)
+ .
+ Unlike cssselect, it does not translate selectors to XPath and therefore does
+ not have all the correctness corner cases that are hard or impossible to fix in
+ cssselect.
+ .
+ This package contains the Python 3 version of the library.

@@ -1,0 +1,10 @@
+.pytest_cache/CACHEDIR.TAG
+.pytest_cache/README.md
+.pytest_cache/v/cache/nodeids
+.pytest_cache/v/cache/stepwise
+cssselect2.egg-info/PKG-INFO
+cssselect2.egg-info/requires.txt
+cssselect2.egg-info/SOURCES.txt
+cssselect2.egg-info/dependency_links.txt
+cssselect2.egg-info/not-zip-safe
+cssselect2.egg-info/top_level.txt

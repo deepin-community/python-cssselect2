@@ -1,0 +1,4 @@
+version=3
+opts=filenamemangle=s/.+\/([\d\.]+)\.tar\.gz/python-cssselect2-$1.tar.gz/ \
+https://github.com/Kozea/cssselect2/releases \
+/Kozea/cssselect2/archive/([\d\.]+)\.tar\.gz
